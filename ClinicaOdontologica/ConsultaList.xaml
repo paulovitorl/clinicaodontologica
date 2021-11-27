@@ -1,0 +1,26 @@
+﻿<Window  WindowStartupLocation="CenterScreen" x:Class="ClinicaOdontologica.ConsultaList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClinicaOdontologica"
+        mc:Ignorable="d"
+        Title="Lista de consultas" Height="377" Width="785">
+    <Grid Margin="0,0,10,7">
+
+        <DataGrid IsReadOnly="True"  SelectionMode="Single" AutoGenerateColumns="False" x:Name="DataGridConsultaList" Margin="10,10,0,89">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding Path=Id}" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="Dentista" Binding="{Binding Path=PessoaDentista.Nome}" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Paciente" Binding="{Binding Path=PessoaPaciente.Nome}" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Data" Binding="{Binding Path=DataConsultaLabel}" Width="150"></DataGridTextColumn>
+                <DataGridTextColumn Header="Hora" Binding="{Binding Path=HoraConsulta}" Width="100"></DataGridTextColumn>
+                <DataGridTextColumn Header="Situacao" Binding="{Binding Path=Status}" Width="150"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="Adicionar" HorizontalAlignment="Left" Margin="469,285,0,0" VerticalAlignment="Top" Height="36" Width="91" Click="addConsulta"/>
+        <Button Content="Editar" HorizontalAlignment="Left" Margin="565,285,0,0" VerticalAlignment="Top" Height="36" Width="91" Click="editConsulta"/>
+        <Button Content="Remover" HorizontalAlignment="Left" Margin="661,285,0,0" VerticalAlignment="Top" Height="36" Width="91" Click="removeConsulta"/>
+    </Grid>
+</Window>

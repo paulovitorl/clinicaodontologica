@@ -1,0 +1,35 @@
+﻿<Window  WindowStartupLocation="CenterScreen" x:Class="ClinicaOdontologica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClinicaOdontologica"
+        mc:Ignorable="d"
+        Title="Sistema de Gerenciamento de Clinica Odontológica" Height="343" Width="792" Background="#FFE4E4E4">
+    <Grid Margin="0,2,10,10">
+        <Button Height="150" Width="150"  HorizontalAlignment="Left" Margin="566,0,0,0" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" RenderTransformOrigin="0.5,0.5"  Click="clickServico">
+            <DockPanel LastChildFill="True" Margin="0,1,0,-1">
+                <Label HorizontalContentAlignment="Center" DockPanel.Dock="Bottom" Background="Transparent" FontWeight="Bold" FontSize="18" Height="34">Serviços</Label>
+                <Image Source="/component/Image/dentist-chair.png" Width="99" />
+            </DockPanel>
+        </Button>
+        <Button Height="150" Width="150"  HorizontalAlignment="Left" Margin="402,0,0,0" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" RenderTransformOrigin="0.5,0.5"  Click="clickConsulta">
+            <DockPanel LastChildFill="True" Margin="0,1,0,-1">
+                <Label HorizontalContentAlignment="Center" DockPanel.Dock="Bottom" Background="Transparent" FontWeight="Bold" FontSize="18" Height="34">Consultas</Label>
+                <Image Source="/component/Image/dental.png" Width="99" />
+            </DockPanel>
+        </Button>
+        <Button Height="150" Width="150"  HorizontalAlignment="Left" Margin="72,0,0,0" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Click="clickDentista">
+            <DockPanel LastChildFill="True">
+                <Label HorizontalContentAlignment="Center" DockPanel.Dock="Bottom" Background="Transparent" FontWeight="Bold" FontSize="18">Dentistas</Label>
+                <Image Source="/component/Image/dentist.png" Height="110" Width="136" Panel.ZIndex="1000" />
+            </DockPanel>
+        </Button>
+        <Button Height="150" Width="150"  HorizontalAlignment="Left" Margin="237,0,0,0" VerticalAlignment="Center" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Click="clickPaciente">
+            <DockPanel LastChildFill="True">
+                <Label HorizontalContentAlignment="Center" DockPanel.Dock="Bottom" Background="Transparent" FontWeight="Bold" FontSize="18" Height="34">Paciente</Label>
+                <Image Source="/component/Image/paciente.png" Height="110" Width="136" />
+            </DockPanel>
+        </Button>
+    </Grid>
+</Window>

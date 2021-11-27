@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="ConsultaList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConsultaWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DentistaList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DentistaWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditConsulta.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditDentistaWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditPacienteWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditServico.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PacienteList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PacienteWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServicoList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ServicoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ConsultaList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConsultaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DentistaList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DentistaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditConsulta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditDentistaWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditPacienteWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditServico.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PacienteList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PacienteWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServicoList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ServicoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
